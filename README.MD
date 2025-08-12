@@ -16,21 +16,14 @@ A simple RESTful API for managing a contacts app, built with [Express.js](https:
 - [Node.js](https://nodejs.org/) (v14+)
 - [npm](https://www.npmjs.com/)
 
-### Installation
+## How to develop locally on your computer
 
-```bash
-git clone https://github.com/yourusername/express-contacts-app.git
-cd express-contacts-app
-npm install
-```
-
-### Running the Server
-
-```bash
-npm run dev
-```
-
-The API will be available at `http://localhost:4321/`.
+1. Fork this repository
+2. Clone to your local machine
+3. `yarn install` in your terminal to install dependencies for development
+4. `yarn dev` to start dev server
+5. Open your browser and navigate to `http://localhost:4321/` to access the API
+6. Use a tool like [Postman](https://www.postman.com/) or [cURL](https://curl.se/) to interact with the API
 
 ## API Endpoints
 
@@ -56,6 +49,10 @@ The API will be available at `http://localhost:4321/`.
 You can deploy this API using various platforms such as:
 
 - [CloudFlare](https://www.cloudflare.com/)
+
+## Feedback
+
+If you have any feedback of issues running the project or potential additions/improvements, please feel free to create a new issue to this repository.
 
 ## License
 
