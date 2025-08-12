@@ -14,16 +14,15 @@ A simple RESTful API for managing a contacts app, built with [Express.js](https:
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) (v14+)
-- [npm](https://www.npmjs.com/)
+- [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
 
-## How to develop locally on your computer
+## How to develop locally
 
 1. Fork this repository
-2. Clone to your local machine
-3. `yarn install` in your terminal to install dependencies for development
-4. `yarn dev` to start dev server
-5. Open your browser and navigate to `http://localhost:4321/` to access the API
-6. Use a tool like [Postman](https://www.postman.com/) or [cURL](https://curl.se/) to interact with the API
+2. Clone to local machine
+3. `npm install` or `yarn install` in terminal to install dependencies
+4. `npm run dev` or `yarn dev` to start dev server
+5. Use a tool like [Postman](https://www.postman.com/) or [Insomnia](https://insomnia.rest/) to interact with the API
 
 ## API Endpoints
 
