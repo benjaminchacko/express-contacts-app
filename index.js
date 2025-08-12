@@ -9,7 +9,11 @@ const contactRoutes = require('#contactRoutes');
 const app = express();
 
 app.use(cors());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({
+    extended: true,
+    limit: '1mb',
+    parameterLimit: 500
+}));
 app.use(function (req, res, next) {
     res.locals.session = req.session;
     next();
@@ -26,6 +30,7 @@ app.use((req, res, next) => {
 
 // Middleware 
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }))
 
 app.get('/', (req, res) => {
     res.send('Hello World!')

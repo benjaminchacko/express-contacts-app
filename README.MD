@@ -26,12 +26,13 @@ A simple RESTful API for managing a contacts app, built with [Express.js](https:
 
 ## API Endpoints
 
-| Method | Endpoint        | Description       |
-| ------ | --------------- | ----------------- |
-| GET    | `/contacts`     | List all contacts |
-| POST   | `/contacts`     | Add a new contact |
-| PATCH  | `/contacts/:id` | Update a contact  |
-| DELETE | `/contacts/:id` | Delete a contact  |
+| Method | Endpoint        | Description            |
+| ------ | --------------- | ---------------------- |
+| GET    | `/contacts`     | List all contacts      |
+| GET    | `/contacts/:id` | Get a specific contact |
+| POST   | `/contacts`     | Add a new contact      |
+| PATCH  | `/contacts/:id` | Update a contact       |
+| DELETE | `/contacts/:id` | Delete a contact       |
 
 ## Example Contact Object
 

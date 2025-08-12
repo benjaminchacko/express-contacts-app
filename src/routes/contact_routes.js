@@ -12,6 +12,20 @@ router.get('/', async (req, res) => {
     }
 });
 
+// GetOne Route - Get a Specific Contact
+router.get('/:contactId', async (req, res) => {
+    const { contactId } = req.params
+    try {
+        const contact = await Contact.findById(contactId);
+        if (!contact) {
+            return res.status(404).json({ message: 'Contact not found' });
+        }
+        res.status(200).json(contact);
+    } catch (err) {
+        res.status(400).json({ message: err });
+    }
+});
+
 // Post Routes
 // Post Route - Create a New Contact
 router.post("/", async (req, res) => {
